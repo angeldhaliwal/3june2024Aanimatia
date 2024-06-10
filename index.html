@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
+        <title>Document</title>
+
+        <style>   
+            
+            body{
+                margin:0px;
+                padding: 0px; 
+                font-family: "Text Me One", sans-serif;   
+                font-style: normal;  
+                background-color: #F5F5F5;                        
+            }
+            body> .background{
+                margin:0px;
+                padding: 0px;
+                height: 585px;  
+                width:1263px;              
+                color: #ffffff;                                
+                background-image: linear-gradient( to right, #6A8D9D 50%,#628190 50%);
+            }
+           .background > h1,p{                   
+                font-size: 36px;
+                position: relative;
+                top:145px;
+                left:250px;
+                margin:0px 0px 0px 0px;
+                margin:0px;                
+            }  
+            p{                
+                margin: 0px 0px 10px 0px; 
+                font-size: 14px;
+                left:209px;
+            } 
+            section{
+                
+                margin:10px 106px 10px 106px;
+                padding: 10px;                               
+                border:1px solid #D8D8D8;                         
+            } 
+            section a{                
+                font-size: 13px;
+                background-color: #F5F5F5;
+                text-decoration: none;
+                color:#6A9AC0;
+                font-weight: 400;
+                margin: 10px 0px;
+                padding: 3px 3px;
+                border:1px solid #D8D8D8; 
+                display: inline-block;             
+            }
+            .ancor_div{
+                width: 228px;
+                padding: 8px;                
+                display: inline-block;
+            }
+            .common1{
+                height: 172px;
+                width: 228px;
+                background-image: url("./img/photo-1.jpg");
+                background-size: cover;
+                position: relative;
+                overflow:hidden;                
+                box-shadow: 1px 1px 3px 2px #C3C3C3;
+                float:left;                         
+            }.overlays{
+                height: 172px;
+                width: 228px;
+                background:#121313;
+                position: absolute;
+                opacity: 0.5;
+                text-align: center;
+                line-height: 172px;                
+                transition: all 0.3s linear;        
+            }.overlays > a {
+                display:inline-block;
+                height:30px;
+                width: 30px;   
+                position: absolute;
+                top:60px;
+                left:80px;                          
+                line-height:30px;
+                color: #121212;
+                border-radius:30px;
+                padding: 3px;                
+                background-color: white;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.1s linear ;
+            } .overlays > a > i{
+                color:#121212;
+            }
+            .b{
+                left: 120px !important;;
+            }
+            .overlay1{
+                top:0px;
+                left:0px;
+                transform: translate(0px,-172px);
+            }
+            .box1:hover > .overlay1{
+                transform: translate(0px,0px);                            
+            }.overlay2{
+                bottom:0px;
+                left:0px;
+                transform: translate(-228px,0px);
+            }
+            .box2:hover > .overlay2{
+                transform: translate(0px,0px);  
+            }
+            .overlay3{
+                bottom:0px;
+                right:0px;
+                transform: translate(0px,172px);
+            }
+            .box3:hover > .overlay3{
+                transform: translate(0px,0px); 
+            }.overlay4{
+                top:0px;
+                right:0px;
+                transform: translate(228px,0px);
+            }
+            .box4:hover > .overlay4{
+                transform: translate(0px,0px); 
+            }       
+            .overlay5{
+                opacity: 0;               
+                transition-duration: 0.4s;
+            }                      
+            .box5:hover > .overlay5{
+                opacity: 0.5;            
+            } .a5{               
+               opacity:0;
+                left:40px !important;
+            }  .b5{
+               opacity:0;
+                left:150px !important;
+            }.a5> i, .b5 >i{
+                transform: scale(0,0);
+            }   
+
+            .box5:hover .a5 {
+              opacity: 1;
+                left: 80px !important;                
+            } .box5:hover i{
+                transform: scale(1,1);
+                transition-delay: 0.3s;
+            }
+            .box5:hover .b5{
+                opacity: 1;
+                left:120px !important;              
+    
+            }
+            .overlay6{
+                opacity: 0;               
+                transition-duration: 0.4s;
+            }                      
+            .box6:hover > .overlay6{
+                opacity: 0.6;            
+            } .a6,.b6{               
+               opacity:0;
+               left:100px !important;
+               transition-duration: 0.4s !important;
+              
+            }.a6> i, .b6 >i{
+                transform: scale(0,0);
+            }   
+
+            .box6:hover .a6 {
+              opacity: 1;
+                left: 80px !important;                
+            } .box6:hover i{
+                transform: scale(1,1);
+                transition-delay: 0.3s;
+            }
+            .box6:hover .b6{
+                opacity: 1;
+                left:120px !important;              
+    
+            } .overlay7{
+                opacity: 0;               
+                transition-duration: 0.4s;
+            }                      
+            .box7:hover > .overlay7{
+                opacity: 0.7;            
+            } .a7,.b7{               
+               opacity:0;
+               transform: scale(1.5,1.5);
+            }           
+
+            .box7:hover .a7,.box7:hover .b7 {
+              opacity: 1;
+              transform: scale(1,1);               
+            } .overlay8{               
+                opacity: 0;               
+                transition-duration: 0.4s;
+            }                      
+            .box8:hover > .overlay8{
+                opacity: 0.5;            
+            } .a8,.b8{               
+               opacity:0;
+               transform: scale(0,0);
+            }           
+
+            .box8:hover .a8,.box8:hover .b8 {
+              opacity: 1;
+              transform: scale(1,1);               
+            }           
+                  
+            footer{
+                height: 40px;
+                width:1263px;               
+                background-image: linear-gradient( to right, #6A8D9D 50%,#628190 50%); 
+                color:white;
+                text-align: right; 
+                line-height: 40px;             
+            }                    
+           
+        </style>
+    </head>
+    <body>
+        <div class="background" >
+            <h1>Animatia</h1>
+            <p>Pure CSS3 image hover animation</p>    
+        </div>   
+        <section> 
+            <h1 style="margin:0px; font-size: 36px; color: #6A8D9D; padding:10px 0px; text-align: center;  ">Button Button</h1>  
+            <hr style="width: 80%; text-align: center;">        
+            <div class="ancor_div"><a href="#">Get Code</a>
+            <div class=" common1 box1">
+                <div class="overlays overlay1">
+                    <a class="a a1" href="#"><i class="fa-solid fa-link"></i></a>
+                    <a class="b b1" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>   
+        </div>
+           <div class="ancor_div"><a href="#">Get Code</a>  
+        <div class=" common1 box2">
+            <div class="overlays overlay2">
+                <a class="a a2" href="#"><i class="fa-solid fa-link"></i></a>
+                <a class="b b2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>  
+        </div>
+              
+        <div class="ancor_div"><a href="#">Get Code</a>  
+        <div class=" common1 box3">
+            <div class="overlays overlay3">
+                <a class="a a3" href="#"><i class="fa-solid fa-link"></i></a>
+                <a class="b b3" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="ancor_div"><a href="#">Get Code</a> 
+        <div class=" common1 box4">
+            <div class="overlays overlay4">
+                <a class="a a4" href="#"><i class="fa-solid fa-link"></i></a>
+                <a class="b b4" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        </div>
+        <div class="ancor_div"><a href="#">Get Code</a>
+            <div class=" common1 box5">
+                <div class="overlays overlay5">
+                    <a class="a a5" href="#"><i class="fa-solid fa-link"></i></a>
+                    <a class="b b5" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>   
+        </div> <div class="ancor_div"><a href="#">Get Code</a>
+            <div class=" common1 box6">
+                <div class="overlays overlay6">
+                    <a class="a a6" href="#"><i class="fa-solid fa-link"></i></a>
+                    <a class="b b6" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>   
+        </div> <div class="ancor_div"><a href="#">Get Code</a>
+            <div class=" common1 box7">
+                <div class="overlays overlay7">
+                    <a class="a a7" href="#"><i class="fa-solid fa-link"></i></a>
+                    <a class="b b7" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>   
+        </div> <div class="ancor_div"><a href="#">Get Code</a>
+            <div class=" common1 box8">
+                <div class="overlays overlay8">
+                    <a class="a a8" href="#"><i class="fa-solid fa-link"></i></a>
+                    <a class="b b8" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>   
+        </div>
+        </section>
+        <footer>
+            © Pixel_Factory
+        </footer>
+        
+    </body>
+</html>
